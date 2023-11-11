@@ -32,4 +32,11 @@ mensais.
 ◆ A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações
 mensais e o custo total do empréstimo.
 
+
+
+https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/c288b025-41a8-4b2e-b5b5-35d3cba8fbe4
+
+
+
+
 ![calculator-1680905_1280](https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/5debf502-c0c8-485d-af46-2cbeb97e8462)
