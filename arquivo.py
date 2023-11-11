@@ -1,115 +1,62 @@
-import tkinter as tk
-from tkinter import messagebox
-from tkinter import messagebox
-from tkinter import Menu
+from flask import Flask, render_template, request
 
-# Projeto 1: Calculadora Financeira com Validação de Renda
-
-# Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes etapas:
-# ➔ Validação de Renda:
-# ◆ Os usuários inserirão informações sobre sua renda mensal.
-# ◆ A aplicação verificará se a renda inserida é válida e está dentro de um limite específico.
-# ➔ Cálculo de Empréstimo:
-# ◆ Após a validação bem-sucedida da renda, os usuários poderão inserir o valor do empréstimo desejado e o prazo.
-# ◆ A aplicação calculará a taxa de juros apropriada e o valor das prestações mensais.
-# ➔ Apresentação dos Resultados:
-# ◆ A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações mensais e o custo total do empréstimo.
+app = Flask(__name__)
 
 
-def validar_renda():
+def validar_renda(renda):
     try:
-        renda_mensal = float(renda_entry.get())
+        renda = float(renda)
         limite_renda = 1000.0  # Limite de renda
-        if renda_mensal >= limite_renda:
-            return renda_mensal
+        if renda >= limite_renda:
+            return renda
         else:
-            messagebox.showerror(
-                "Erro", "Sua renda mensal é muito baixa para solicitar um empréstimo.")
-            return None
+            return None, "Erro: Sua renda mensal é muito baixa para solicitar um empréstimo."
     except ValueError:
-        messagebox.showerror("Erro", "Por favor, insira uma renda válida.")
-        return None
+        return None, "Erro: Por favor, insira uma renda válida."
 
 
-def calcular_emprestimo():
-    renda = validar_renda()
-    if renda is not None:
-        try:
-            valor_emprestimo = float(valor_emprestimo_entry.get())
-            prazo_emprestimo = int(prazo_emprestimo_entry.get())
-            taxa_juros_anual = float(taxa_juros_entry.get())
-
-            taxa_juros_mensal = taxa_juros_anual / 12 / 100
-            valor_prestacao = (valor_emprestimo * taxa_juros_mensal) / \
-                (1 - (1 + taxa_juros_mensal) ** -prazo_emprestimo)
-
-            # Calcula o custo total do empréstimo
-            custo_total = valor_prestacao * prazo_emprestimo
-
-            resultado_label.config(text=f"Taxa de juros anual: {taxa_juros_anual:.2f}%\n"
-                                   f"Prestação mensal: R${
-                                       valor_prestacao:.2f}\n"
-                                   f"Custo total do empréstimo: R${custo_total:.2f}")
-
-            # Habilita o botão de salvar
-            salvar_button["state"] = "normal"
-        except ValueError:
-            messagebox.showerror(
-                "Erro", "Por favor, insira valores válidos para o empréstimo, o prazo e a taxa de juros.")
-
-
-def salvar_resultado():
+def calcular_emprestimo(renda, valor_emprestimo, prazo, taxa_juros_anual):
     try:
-        with open("resultado_emprestimo.txt", "w") as arquivo:
-            arquivo.write(resultado_label.cget("text"))
-        messagebox.showinfo(
-            "Sucesso", "Resultado do empréstimo salvo com sucesso.")
-    except Exception as e:
-        messagebox.showerror(
-            "Erro", f"Não foi possível salvar o resultado: {str(e)}")
+        taxa_juros_mensal = taxa_juros_anual / 12 / \
+            100  # Convertendo taxa anual para mensal
+        valor_prestacao = (valor_emprestimo * taxa_juros_mensal) / \
+            (1 - (1 + taxa_juros_mensal) ** -prazo)
+        return taxa_juros_anual, valor_prestacao, None
+    except ZeroDivisionError:
+        return None, None, "Erro: Prazo do empréstimo não pode ser zero."
 
 
-# Configuração da GUI
-app = tk.Tk()
-app.title("Calculadora Financeira")
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    renda_valida = None
+    resultado_validacao_renda = None
+    resultado_calculo_emprestimo = None
 
-# Renda
-renda_label = tk.Label(app, text="Renda Mensal:")
-renda_label.pack()
-renda_entry = tk.Entry(app)
-renda_entry.pack()
+    if request.method == 'POST':
+        renda_input = request.form['renda']
+        renda_valida, resultado_validacao_renda = validar_renda(renda_input)
 
-# Valor do Empréstimo
-valor_emprestimo_label = tk.Label(app, text="Valor do Empréstimo:")
-valor_emprestimo_label.pack()
-valor_emprestimo_entry = tk.Entry(app)
-valor_emprestimo_entry.pack()
+        if renda_valida is not None:
+            valor_emprestimo = float(request.form['emprestimo'])
+            prazo_emprestimo = int(request.form['prazo'])
+            taxa_juros_anual = float(request.form['juros'])
 
-# Prazo do Empréstimo
-prazo_emprestimo_label = tk.Label(
-    app, text="Prazo do Empréstimo (em meses):")
-prazo_emprestimo_label.pack()
-prazo_emprestimo_entry = tk.Entry(app)
-prazo_emprestimo_entry.pack()
+            taxa_juros_anual, prestacao_mensal, erro_calculo = calcular_emprestimo(
+                renda_valida, valor_emprestimo, prazo_emprestimo, taxa_juros_anual)
 
-# Taxa de Juros Anual
-taxa_juros_label = tk.Label(app, text="Taxa de Juros Anual (%):")
-taxa_juros_label.pack()
-taxa_juros_entry = tk.Entry(app)
-taxa_juros_entry.pack()
+            if erro_calculo is not None:
+                resultado_calculo_emprestimo = erro_calculo
+            else:
+                resultado_calculo_emprestimo = {
+                    'taxa_juros_anual': taxa_juros_anual,
+                    'prestacao_mensal': prestacao_mensal,
+                    'custo_total': prestacao_mensal * prazo_emprestimo
+                }
 
-# Botão para calcular
-calcular_button = tk.Button(app, text="Calcular", command=calcular_emprestimo)
-calcular_button.pack()
+    return render_template('index.html', renda_valida=renda_valida,
+                           resultado_validacao_renda=resultado_validacao_renda,
+                           resultado_calculo_emprestimo=resultado_calculo_emprestimo)
 
-# Resultado
-resultado_label = tk.Label(app, text="")
-resultado_label.pack()
 
-# Botão para salvar resultado
-salvar_button = tk.Button(app, text="Salvar Resultado",
-                          command=salvar_resultado, state="disabled")
-salvar_button.pack()
-
-app.mainloop()
-
+if __name__ == '__main__':
+    app.run(debug=True)

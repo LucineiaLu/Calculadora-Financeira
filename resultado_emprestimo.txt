@@ -1,0 +1,3 @@
+Taxa de juros anual: 9.00%
+Prestação mensal: R$685.27
+Custo total do empréstimo: R$16446.51
