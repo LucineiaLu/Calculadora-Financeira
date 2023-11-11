@@ -8,6 +8,8 @@ https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/4250d57d-7
 
 Projeto 1: Calculadora Financeira com Validação de Renda
 
+Versão da páginas Web : file:///C:/Users/lu_ci/Downloads/testecal.py/templates/index.html
+
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
 etapas:
@@ -31,6 +33,7 @@ mensais.
 
 ◆ A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações
 mensais e o custo total do empréstimo.
+
 
 
 
