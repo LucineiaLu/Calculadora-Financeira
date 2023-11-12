@@ -26,6 +26,9 @@ Video gravado com Codigo funcionando PySimpleGUI:  https://clipchamp.com/watch/T
 
 Link Google Colab: https://colab.research.google.com/github/LucineiaLu/Calculadora-Financeira/blob/main/ProjetoCalculadora.ipynb
 
+
+Link do Replit: https://replit.com/@lucineiaLu/projetocalculadora#ccalculadorafinaceira.py
+
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
 etapas:
