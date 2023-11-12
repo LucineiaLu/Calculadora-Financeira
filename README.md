@@ -21,6 +21,7 @@ Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/wat
 Video gravado com Codigo funcionando no tkinter: https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/c288b025-41a8-4b2e-b5b5-35d3cba8fbe4
 
 
+
 Video gravado com Codigo funcionando PySimpleGUI:  https://clipchamp.com/watch/TE2IJeERvAi
 
 
@@ -32,7 +33,11 @@ Link Google Colab: https://colab.research.google.com/github/LucineiaLu/Calculado
 Link do Video Usando o Google Colab: [Vídeo sem título - Screen Recording - 12_11_2023, 19_27_53.webm](https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/fbea169d-68b2-428a-bc94-584c79d5e095)
 
 
+
 Link do Replit: https://replit.com/@lucineiaLu/projetocalculadora#ccalculadorafinaceira.py
+
+
+Link Usando o Replit: https://replit.com/@lucineiaLu/Projeto-Calculadora#main.py
 
 
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
