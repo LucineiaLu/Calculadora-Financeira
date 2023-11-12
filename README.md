@@ -34,8 +34,6 @@ Link do Video Usando o Google Colab: [Vídeo sem título - Screen Recording - 12
 
 
 
-Link do Replit: https://replit.com/@lucineiaLu/projetocalculadora#ccalculadorafinaceira.py
-
 
 Link Usando o Replit: https://replit.com/@lucineiaLu/Projeto-Calculadora#main.py
 
