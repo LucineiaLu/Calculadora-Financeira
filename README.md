@@ -9,6 +9,18 @@ https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/4250d57d-7
 Projeto 1: Calculadora Financeira com Validação de Renda
 
 
+Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/watch/f1iA7aDtOZZ
+
+
+
+Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/watch/6vPm8NdpyuS
+
+
+
+Video gravado com Codigo funcionando no tkinter: https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/c288b025-41a8-4b2e-b5b5-35d3cba8fbe4
+
+
+
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
 etapas:
@@ -33,11 +45,6 @@ mensais.
 ◆ A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações
 mensais e o custo total do empréstimo.
 
-Video gravado com Codigo funcionando: https://clipchamp.com/watch/f1iA7aDtOZZ
-
-
-
-https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/c288b025-41a8-4b2e-b5b5-35d3cba8fbe4
 
 
 
