@@ -9,6 +9,11 @@ https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/4250d57d-7
 Projeto 1: Calculadora Financeira com Validação de Renda
 
 
+
+https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/22ed60c8-67b2-48f5-8782-473f43188044
+
+
+
 Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/watch/f1iA7aDtOZZ
 
 
