@@ -10,7 +10,7 @@ https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/22ed60c8-6
 
 
 
-Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/watch/f1iA7aDtOZZ
+Video gravado com Codigo funcionando no Visual Studio tkinter: https://clipchamp.com/watch/f1iA7aDtOZZ
 
 
 
