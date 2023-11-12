@@ -20,6 +20,10 @@ Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/wat
 Video gravado com Codigo funcionando no tkinter: https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/c288b025-41a8-4b2e-b5b5-35d3cba8fbe4
 
 
+Video gravado com Codigo funcionando PySimpleGUI:  https://clipchamp.com/watch/TE2IJeERvAi
+
+
+
 
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
