@@ -2,10 +2,6 @@
 
 
 
-https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/4250d57d-78f1-4c85-b8f1-fc2fdc1c2397
-
-
-
 Projeto 1: Calculadora Financeira com Validação de Renda
 
 
