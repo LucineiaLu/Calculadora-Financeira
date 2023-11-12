@@ -14,7 +14,7 @@ Video gravado com Codigo funcionando no Visual Studio tkinter: https://clipchamp
 
 
 
-Video gravado com Codigo funcionando no Visual Studio: https://clipchamp.com/watch/6vPm8NdpyuS
+Video gravado com Codigo funcionando no Visual Studio: [Vídeo sem título - Screen Recording - 12_11_2023, 20_15_28.webm](https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/ad5014e5-3a8f-41ec-98a1-97251847b60f)
 
 
 
