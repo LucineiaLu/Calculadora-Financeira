@@ -26,6 +26,7 @@ Video gravado com Codigo funcionando PySimpleGUI:  https://clipchamp.com/watch/T
 
 Link Google Colab: https://colab.research.google.com/github/LucineiaLu/Calculadora-Financeira/blob/main/ProjetoCalculadora.ipynb
 
+Link do Video Usando o Google Colab: https://clipchamp.com/watch/NetmCJOM4qP
 
 Link do Replit: https://replit.com/@lucineiaLu/projetocalculadora#ccalculadorafinaceira.py
 
