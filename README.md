@@ -24,7 +24,7 @@ Video gravado com Codigo funcionando no tkinter: https://github.com/LucineiaLu/C
 Video gravado com Codigo funcionando PySimpleGUI:  https://clipchamp.com/watch/TE2IJeERvAi
 
 
-
+Link Google Colab: https://colab.research.google.com/github/LucineiaLu/Calculadora-Financeira/blob/main/ProjetoCalculadora.ipynb
 
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
