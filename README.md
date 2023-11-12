@@ -37,6 +37,9 @@ Link do Video Usando o Google Colab: [Vídeo sem título - Screen Recording - 12
 
 Link Usando o Replit: https://replit.com/@lucineiaLu/Projeto-Calculadora#main.py
 
+Link do Vídeo Usando o Replit: [Vídeo sem título - Screen Recording - 12_11_2023, 20_07_00.webm](https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/8ec35d91-6636-4f38-b365-daef67901240)
+
+
 
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
 usuários a calcular empréstimos com base em sua renda. A aplicação incluirá as seguintes
