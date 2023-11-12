@@ -33,7 +33,7 @@ mensais.
 ◆ A aplicação exibirá os resultados do cálculo, incluindo o valor das prestações
 mensais e o custo total do empréstimo.
 
-https://clipchamp.com/watch/f1iA7aDtOZZ
+Video gravado com Codigo funcionando: https://clipchamp.com/watch/f1iA7aDtOZZ
 
 
 
