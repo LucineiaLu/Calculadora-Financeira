@@ -32,3 +32,4 @@ Execução do Programa:
 
 O código finaliza com a execução das etapas acima, desde a validação da renda até a apresentação dos resultados, apenas se a renda validada for diferente de None.
 O projeto fornece uma calculadora financeira interativa que orienta os usuários no cálculo de empréstimos com base em sua renda mensal, garantindo que a renda atenda a um limite mínimo antes de prosseguir com o cálculo.
+
