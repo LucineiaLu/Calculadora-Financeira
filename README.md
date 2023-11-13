@@ -4,8 +4,6 @@
 
 Projeto 1: Calculadora Financeira com Validação de Renda
 
-Link para acesso Github: 
-https://github.com/LucineiaLu/Calculadora-Financeira
 
 https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/a0a1ed85-c473-4953-a832-6eabacf13ee4
 
@@ -45,6 +43,8 @@ Link Usando o Replit: https://replit.com/@lucineiaLu/Projeto-Calculadora#main.py
 
 Link do Vídeo Usando o Replit: [Vídeo sem título - Screen Recording - 12_11_2023, 20_07_00.webm](https://github.com/LucineiaLu/Calculadora-Financeira/assets/149438779/8ec35d91-6636-4f38-b365-daef67901240)
 
+Link para acesso Github: 
+https://github.com/LucineiaLu/Calculadora-Financeira
 
 
 Neste projeto, os alunos criarão uma calculadora financeira em Python que ajudará os
